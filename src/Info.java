@@ -57,4 +57,9 @@ public class Info extends JPanel {
         location.label.setText(Integer.toString(frame.table.playerX / scale)
                 + ", " + Integer.toString(frame.table.playerZ / scale));
     }
+
+    void updateDimension(boolean dimension) {
+        dimensionButton.dimension = dimension;
+        update();
+    }
 }

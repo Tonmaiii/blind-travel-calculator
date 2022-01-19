@@ -61,11 +61,11 @@ public class Frame extends MoveJFrame {
         if (netherMatcher.find()) {
             x = (int) (Double.parseDouble(netherMatcher.group("x")) * 8);
             z = (int) (Double.parseDouble(netherMatcher.group("z")) * 8);
-            table.updateDimension(true);
+            updateDimension(true);
         } else if (overworldMatcher.find()) {
             x = (int) (Double.parseDouble(overworldMatcher.group("x")));
             z = (int) (Double.parseDouble(overworldMatcher.group("z")));
-            table.updateDimension(false);
+            updateDimension(false);
         } else
             return;
 
